@@ -1,0 +1,59 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    min-height: 200vh; /* Ensure enough scrollable area */
+    padding: 20px;
+    text-align: center;
+}
+
+.scroll-footer {
+    position: fixed;
+    bottom: -100px; /* Hidden initially */
+    left: 0;
+    width: 100%;
+    background-color: rgba(36, 9, 41, 0.8); /* Semi-transparent background */
+    color: #fff;
+    box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-top: 2px solid #00ff88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: bottom 0.5s ease-in-out; /* Smooth slide-in/out effect */
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #f82bd6;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* For modern browsers */
+body {
+    overflow-y: scroll; /* Ensures content is scrollable */
+    scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+footer {
+    height: 50px; /* Adjust the height */
+    padding: 10px 20px; /* Adjust the padding */
+    font-size: 14px; /* Reduce font size if needed */
+    line-height: 1.2; /* Adjust line height for text */
+}
+
