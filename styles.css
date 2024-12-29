@@ -162,6 +162,17 @@ nav ul li a {
     text-decoration: none;
 }
 
+.club-card-back a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.club-card-back a:hover {
+    color: #ffffff; /* Change color to white on hover */
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
