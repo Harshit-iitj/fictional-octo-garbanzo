@@ -116,13 +116,16 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 2rem;
-    gap: 1rem;
+    gap: 2rem; /* Increased gap for vertical tiles */
 }
 
 .club-card {
     perspective: 1000px;
     width: 200px;
-    height: 150px;
+    height: 300px; /* Adjusted height for vertical tiles */
+    border: 5px solid white; /* Added a thick white border */
+    border-radius: 10px; /* Rounded corners for the border */
+    overflow: hidden; /* Ensures no content overflows outside the border */
 }
 
 .club-card-inner {
@@ -156,10 +159,22 @@ nav ul li a {
     background-color: var(--secondary-color);
 }
 
+.club-card-front img {
+    width: 100%; /* Ensure the image covers the full width */
+    height: 100%; /* Ensure the image covers the full height */
+    object-fit: cover; /* Ensures the image fully covers the area while maintaining aspect ratio */
+}
+
 .club-card-back {
     background-color: var(--accent-color);
     transform: rotateY(180deg);
-    text-decoration: none;
+}
+
+.club-card-back ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
 }
 
 .club-card-back a {
