@@ -1,0 +1,145 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Deep blackish background */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Container for the Timeline */
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* Timeline Flex Layout */
+.timeline {
+    position: relative;
+    width: 90%;
+    max-width: 1200px; /* Increased max-width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Vertical Line at the Center */
+.timeline-route {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #7a4cf6, #007bff); /* Gradient from violet to blue */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Dot Checkpoints on the Vertical Line */
+.timeline-checkpoint {
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff; /* White dots */
+    border-radius: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item Styles */
+.timeline-item {
+    position: relative;
+    margin: 50px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #7a4cf6, #007bff); /* Gradient background from violet to blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Visible State for Timeline Item */
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Fade-out Animation for Items */
+.timeline-item.fade-out {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Even Timeline Items Positioned Left of the Line */
+.timeline-item:nth-child(even) {
+    align-self: flex-start;
+    transform: translateX(-50px) scale(0.9); /* Move items to the left */
+}
+
+/* Visible State for Even Items */
+.timeline-item:nth-child(even).visible {
+    transform: translateX(0) scale(1);
+}
+
+/* Odd Timeline Items Positioned Right of the Line */
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    transform: translateX(50px) scale(0.9); /* Move items to the right */
+}
+
+/* Visible State for Odd Items */
+.timeline-item:nth-child(odd).visible {
+    transform: translateX(0) scale(1);
+}
+
+/* Positioning the checkpoint dots */
+.timeline-item:nth-child(1) .timeline-checkpoint {
+    top: 0%;  /* First checkpoint */
+}
+
+.timeline-item:nth-child(2) .timeline-checkpoint {
+    top: 10%;
+}
+
+.timeline-item:nth-child(3) .timeline-checkpoint {
+    top: 20%;
+}
+
+.timeline-item:nth-child(4) .timeline-checkpoint {
+    top: 30%;
+}
+
+.timeline-item:nth-child(5) .timeline-checkpoint {
+    top: 40%;
+}
+
+.timeline-item:nth-child(6) .timeline-checkpoint {
+    top: 50%;
+}
+
+.timeline-item:nth-child(7) .timeline-checkpoint {
+    top: 60%;
+}
+
+.timeline-item:nth-child(8) .timeline-checkpoint {
+    top: 70%;
+}
+
+.timeline-item:nth-child(9) .timeline-checkpoint {
+    top: 80%;
+}
+
+.timeline-item:nth-child(10) .timeline-checkpoint {
+    top: 90%;
+}
+
+.timeline-item:nth-child(11) .timeline-checkpoint {
+    top: 100%;
+}
