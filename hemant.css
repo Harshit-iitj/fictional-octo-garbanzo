@@ -10,8 +10,13 @@
 /* CP Sprint (Main Event Title) */
 /* CP Sprint (Main Event Title) */
 /* CP Sprint (Main Event Title) */
+
+
 .CP {
+    
+   
     background-image: linear-gradient(to right, #ff5757, #ff66b4, #ff66b4, #ff71fe, #38b6ff, #5ce1e6, #00adad, #5170ff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 15vw; /* Reduce font size slightly */
@@ -141,7 +146,7 @@ nav ul li a:hover {
 }
 
 .event-description h1 {
-    font-size: 2.5rem;
+    font-size: 70px;
     margin-bottom: 1rem;
     color: var(--highlight-color);
     transition: color 0.3s, text-shadow 0.3s;
