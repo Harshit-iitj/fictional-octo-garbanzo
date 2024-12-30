@@ -553,19 +553,41 @@ html {
 }
 
 /* Footer styles */
-.footer {
-    background-color: rgba(21, 22, 24, 0.7);
-    /* Match navbar color with reduced opacity */
-    color: white;
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin: 0;
     text-align: center;
-    height: 100px;
-    padding: 10px 0;
-    /* Adjust padding as needed */
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    font-family: 'Russo One', sans-serif;
-    /* Change font style to Russo One */
+    flex-grow: 1;
+}
+social-links {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.social-links a {
+    margin: 0 10px;
+    z-index: 1;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    z-index: 1;
 }
 
 /* Form section styles */
