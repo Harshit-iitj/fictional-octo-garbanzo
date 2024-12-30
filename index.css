@@ -11,6 +11,7 @@ html {
     /* Dark blue to indigo gradient with reduced opacity */
     color: #FFF;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navbar {

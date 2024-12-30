@@ -9,46 +9,51 @@ html, body {
     color: white;
     background: none; /* Ensure no background color to preserve video visibility */
 }
-
-.navbar {
-    background-color: rgba(21, 22, 24, 0.7);
-    color: white;
-    padding: 2px 0;
-    text-align: center;
-    position: fixed;
-    width: calc(100% - 17px);
-    top: 0;
-    z-index: 1;
+h1, h2, h3, h4, h5, h6, p, a, .navbar, .member-role, .member-name, .member-contact, .footer-container {
+    font-family: 'Russo One', sans-serif;
 }
 
-.navbar-logo {
-    float: left;
-    padding: 6px 20px;
+.navbar {
+    background-color: rgba(21, 22, 24, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px; /* Increased padding for better spacing */
+    position: fixed;
+    width: 100%; /* Full-width navbar */
+    top: 0;
+    z-index: 100; /* Ensure navbar is above all elements */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .navbar-logo img {
-    height: 40px;
+    height: 40px; /* Adjust the logo height */
 }
 
 .navbar-links {
-    float: right;
+    display: flex; /* Arrange links horizontally */
+    gap: 20px; /* Space between links */
 }
 
 .navbar-links a {
     float: left;
     display: block;
     color: #ffffff;
+    /* White text */
     text-align: center;
     padding: 6px 20px;
+    /* Decrease padding by 3px */
     text-decoration: none;
     border-radius: 20px;
+    /* Circular edges */
     font-family: 'Russo One', sans-serif;
+    /* Change font style to Russo One */
 }
 
 .navbar-links a:hover {
-    background-color: rgba(255, 20, 147, 0.7);
+    background-color: rgba(255, 20, 147, 0.7); /* Highlight color on hover */
 }
-
 
 /* Background Video */
 #background-video {
@@ -170,7 +175,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-links {
-        display: none;
+        display: none; /* Hide links on smaller screens */
     }
     .contact-row {
         flex-direction: column;
@@ -180,10 +185,19 @@ footer {
         text-align: center;
     }
 }
+
 .member-role {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; /* Glowing effect */
 }
+/* Adjust padding or position of the roller */
+.roller-container {
+    padding-top: 60px; /* Add padding to prevent overlap */
+    z-index: 0; /* Ensure it doesn't go above other elements */
+}
 
+.navbar {
+    z-index: 100; /* Keep the navbar above the roller */
+}
