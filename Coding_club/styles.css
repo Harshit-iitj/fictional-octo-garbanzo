@@ -177,13 +177,11 @@ nav ul li a:hover {
 .Register {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 25px;
+    font-size: 16.8px;
     color: #fff;
     background-color: #040726a5;
-    border: none;
     border-radius: 5px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
     position: relative;
