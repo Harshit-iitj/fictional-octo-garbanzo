@@ -8,7 +8,7 @@
     <title>NEXUS</title>
     <!-- Google Fonts link for Russo One -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico">
     <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="afqinz" data-token-hash="1pjg6ju"
         data-cache-path="1pjg6ju|Shared|wayin">
         .css-dev-only-do-not-override-1dv7gqc a {
@@ -486,6 +486,7 @@
         .css-dev-only-do-not-override-1dv7gqc.wayin-drawer .wayin-drawer-panel-motion-bottom-leave-active {
             transform: translateY(100%);
         }
+        
     </style>
     <style data-rc-order="prependQueue" data-css-hash="13duhwi" data-token-hash="1pjg6ju"
         data-cache-path="1pjg6ju|ant-design-icons|anticon">
@@ -543,7 +544,10 @@
             display: block;
         }
     </style>
-    <link rel="stylesheet" href="Nexus.css">
+    <link rel="stylesheet" href="anime.css">
+
+  
+    
     
 </head>
 
@@ -555,14 +559,14 @@
             <img src="images/logoiitjammu.png" alt="Institute Logo"> <!-- Replace with your logo path -->
         </div>
         <div class="navbar-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#teams">Teams</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
     <!-- partial:index.partial.html -->
-    <!-- <p id="A">HEMANT IS SUPER BOY</p> -->
+   
     <div id="container" class="container">
         <!-- Floating logo container -->
         <div class="floating-logo">
@@ -576,9 +580,7 @@
         <div class="company-slogan">
             <p> UNITE || COMPETE || CONQUER </p> <!-- Replace with your company slogan -->
         </div>
-        <!-- Replace with your company name -->
-
-        <!-- Replace with your company name -->
+      
 
         <div id="output" class="output">
             <!--
@@ -618,7 +620,7 @@
     <!-- Background video container -->
     <div class="background-video-container">
         <video autoplay muted loop>
-            <source src="Nexus.mp4" type="video/mp4"> <!-- Replace with your video file path -->
+            <source src="homepagebg.mp4" type="video/mp4"> 
             Your browser does not support the video tag.
         </video>
     </div>
@@ -701,6 +703,7 @@
                 </div>
                
             </div>
+            <!-- Text and Google Form link below sponsors section -->
             <div class="form-section">
                 <p>Please fill this <a href="https://forms.gle/your-google-form-link" target="_blank" class="form-link">form</a> to become our sponsor.</p>
             </div>
@@ -708,52 +711,15 @@
 
 
 
-        <div class="cursor"></div>
 
-        <section class="main">
-
-        </section>
-
-        <div class="cursor"></div>
+       
         <!-- Footer -->
         <div class="footer">
-            <p>&copy; 2023 NEXUS. All rights reserved.</p>
+            <p>&copy; 2025 NEXUS. All rights reserved.</p>
+           
         </div>
-        <script type="text/javascript">
-            const cursor = document.querySelector(".cursor");
-            var timeout;
-
-            //follow cursor on mousemove
-            document.addEventListener("mousemove", (e) => {
-                let x = e.pageX;
-                let y = e.pageY;
-
-                cursor.style.top = y + "px";
-                cursor.style.left = x + "px";
-                cursor.style.display = "block";
-
-                //cursor effects when mouse stopped
-                function mouseStopped() {
-                    cursor.style.display = "none";
-                }
-                clearTimeout(timeout);
-                timeout = setTimeout(mouseStopped, 1000);
-            });
-
-            //cursor effects when mouseout
-            document.addEventListener("mouseout", () => {
-                cursor.style.display = "none";
-            });
-        </script>
-        <script>
-            document.addEventListener('scroll', function () {
-                const videoTextContainer = document.querySelector('.video-text-container');
-                const rect = videoTextContainer.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                    videoTextContainer.classList.add('show');
-                }
-            });
-        </script>
+      
+   
 </body>
 
 </html>
