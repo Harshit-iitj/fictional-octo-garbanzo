@@ -160,6 +160,9 @@ html {
     background: rgba(0, 0, 0, 0.1);
     /* Semi-transparent background */
     border-radius: 10px;
+    /* Ensure video is left-aligned and text is right-aligned */
+    flex-direction: row;
+    gap: 40px; /* Add this line to increase the distance between video and text */
 }
 
 .video-text-container video {
@@ -168,7 +171,7 @@ html {
     border-radius: 10px;
 }
 
-.video-text-container .text-content {
+.video-text-container  .text-content {
     width: 45%;
     /* Adjust the width as needed */
 
