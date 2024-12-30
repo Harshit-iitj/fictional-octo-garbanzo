@@ -175,7 +175,7 @@ html {
     color: #FFF;
     font-family: 'Russo One', sans-serif;
     /* Change font style to Russo One */
-    text-shadow: 0 0 1px #87CEEB, 0 0 3px #87CEEB, 0 0 10px #87CEEB, 0 0 12px #87CEEB;
+    text-shadow: 0 0 3px #87CEEB, 0 0 3px #87CEEB, 0 0 3px #87CEEB, 0 0 3px #87CEEB;
     /* Reduced glow effect */
 }
 
@@ -222,7 +222,7 @@ html {
 }
 
 .flip-card {
-    background-color: rgba(0, 0, 0, 0.3); /* Decrease opacity */
+    background-color: rgba(0, 0, 0, 0); /* Decrease opacity */
     width: 20%;
     height: 350px;
     perspective: 1000px;
@@ -245,7 +245,7 @@ html {
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(540deg); /* Flip 540 degrees on hover */
+    transform: rotateY(180deg); /* Flip 540 degrees on hover */
 }
 
 .flip-card-front,
@@ -255,6 +255,10 @@ html {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
+}
+.flip-card-back a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 .flip-card-front {
