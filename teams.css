@@ -63,6 +63,7 @@ body, html {
     box-sizing: border-box;
     font-family: 'Russo One', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* Main content styling */
