@@ -63,6 +63,7 @@ body, html {
     box-sizing: border-box;
     font-family: 'Russo One', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* Main content styling */
@@ -206,7 +207,6 @@ footer {
   }
   
   .club-name:hover {
-    transform: scale(1.1) rotate(3deg);
-    text-shadow: 0 0 10px #ff7e5f, 0 0 20px #feb47b, 0 0 30px #86a8e7;
+    transform: scale(1.1);
   }
   
