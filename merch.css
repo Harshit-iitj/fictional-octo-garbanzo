@@ -96,7 +96,7 @@ h1 {
     transform: scale(1.1);
 }
 
-.tiles-container:hover {
+.tiles:hover {
     animation-play-state: paused;
 }
 
