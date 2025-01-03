@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zoom.css">
+    
+</head>
+<body>
+    <!-- Centering container -->
+    <div class="center-container">
+        <!-- First image container -->
+        <div id="imageZoom" class="zoom-container" style="
+            --url: url(1.jpg);
+            --zoom-x: 0%; --zoom-y: 0%;
+            --display: none
+        ">
+            <img src="1.jpg" alt="">
+        </div>
+        <!-- Second image container with updated size -->
+        <div id="secondimage" class="zoom-container" style="
+            --url: url(test.jpg);
+            --zoom-x: 0%; --zoom-y: 0%;
+            --display: none;
+        ">
+            <img src="test.jpg" alt="">
+        </div>
+    </div>
+   <script src="zoom.js"></script>
+</body>
+</html>
